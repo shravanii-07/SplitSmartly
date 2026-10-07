@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  # Nitro's Netlify preset writes static assets to dist/ and the SSR handler to
+  # .netlify/functions-internal/ (auto-detected by Netlify), so no publish/function
+  # path overrides are needed beyond this.
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
